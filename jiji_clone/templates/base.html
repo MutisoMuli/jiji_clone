@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiji - Buy & Sell Online</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  {% load static %}
+  <link href="{% static 'css/output.css' %}" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-green-500 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold">jiji</a>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white">Sign in</a>
+                    <span class="text-white">|</span>
+                    <a href="#" class="text-white">Registration</a>
+                    <button class="bg-orange-500 text-white px-4 py-1 rounded">SELL</button>
+                </div>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="mt-8 text-center">
+                <p class="text-white mb-2">Find anything in All Kenya</p>
+                <div class="max-w-2xl mx-auto">
+                    <input type="text" placeholder="I am looking for..." class="w-full px-4 py-2 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex">
+            <!-- Sidebar -->
+            <div class="w-64 pr-8">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span>Vehicles</span>
+                        <span class="text-gray-500">285,863 ads</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span>Property</span>
+                        <span class="text-gray-500">28,352 ads</span>
+                    </div>
+                    <!-- Add other categories similarly -->
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="flex-1">
+                <!-- Banner -->
+                <div class="bg-gradient-to-r from-green-400 to-green-300 rounded-lg mb-8 p-6">
+                    <h2 class="text-2xl text-white">How to buy on Jiji?</h2>
+                    <p class="text-white">Check out the step-by-step guide</p>
+                </div>
+
+                <h3 class="text-xl mb-4">Trending ads</h3>
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- Product Cards -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Suzuki Swift" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4>Suzuki Swift 2017 Black</h4>
+                            <p class="text-green-500">KSh 1,250,000</p>
+                        </div>
+                    </div>
+                    <!-- Add more product cards similarly -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-500 py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-4 gap-8 text-white">
+                <div>
+                    <h4 class="font-bold mb-4">About us</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#">About Jiji</a></li>
+                        <li><a href="#">We are hiring!</a></li>
+                        <!-- Add other footer links -->
+                    </ul>
+                </div>
+                <!-- Add other footer columns -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
