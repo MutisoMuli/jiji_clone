@@ -4,16 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jiji - Buy & Sell Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
   {% load static %}
   <link href="{% static 'css/output.css' %}" rel="stylesheet">
+  <style>
+    .bg-jiji-green {
+        background-color: #00B53F;
+    }
+    .bg-jiji-hero {
+        background-color: #00A434;
+    }
+    .border-jiji-dark {
+        border-color: #009E38;
+    }
+</style>
 </head>
 <body class="bg-white">
-    <!-- Header -->
-    <header class="bg-green-500 py-4">
+      <!-- Header -->
+      <header class="bg-jiji-green py-4 border-b border-jiji-dark">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-white text-2xl font-bold">jiji</a>
+                <a href="#" class="text-white text-2xl font-bold">
+                    <img src="static/images/jiji.png" alt="Jiji" class="h-12 w-auto">
+                </a>
+               
                 <div class="flex space-x-4">
                     <a href="#" class="text-white">Sign in</a>
                     <span class="text-white">|</span>
@@ -21,16 +36,35 @@
                     <button class="bg-orange-500 text-white px-4 py-1 rounded">SELL</button>
                 </div>
             </div>
-            
-            <!-- Search Bar -->
-            <div class="mt-8 text-center">
-                <p class="text-white mb-2">Find anything in All Kenya</p>
-                <div class="max-w-2xl mx-auto">
-                    <input type="text" placeholder="I am looking for..." class="w-full px-4 py-2 rounded-lg">
-                </div>
-            </div>
         </div>
     </header>
+  
+    <!-- Hero Section -->
+    <section class="bg-jiji-hero min-h-[280px] flex flex-col justify-center items-center">
+      <div class="w-full max-w-2xl mx-auto px-4">
+          <div class="flex justify-center items-center mb-6">
+              <span class="text-white text-lg">Find anything in</span>
+              <div class="bg-black px-2 py-0.5 rounded flex items-center gap-1 ml-1 cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="white" class="opacity-90">
+                      <path d="M12 0C7.802 0 4 3.403 4 7.602C4 11.8 7.469 16.812 12 24C16.531 16.812 20 11.8 20 7.602C20 3.403 16.199 0 12 0ZM12 11C10.343 11 9 9.657 9 8C9 6.343 10.343 5 12 5C13.657 5 15 6.343 15 8C15 9.657 13.657 11 12 11Z"/>
+                  </svg>
+                  <span class="text-white text-sm">All Kenya</span>
+              </div>
+          </div>
+          <div class="relative w-full">
+              <input 
+                  type="text" 
+                  placeholder="I am looking for..." 
+                  class="w-full px-6 py-4 rounded-lg pr-12 text-lg"
+              >
+              <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                  <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+  </section>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
