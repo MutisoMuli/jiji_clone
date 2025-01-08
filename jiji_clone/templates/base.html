@@ -70,20 +70,53 @@
     <main class="container mx-auto px-4 py-8">
         <div class="flex">
             <!-- Sidebar -->
-            <div class="w-64 pr-8">
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span>Vehicles</span>
-                        <span class="text-gray-500">285,863 ads</span>
+            <div class="w-64 bg-white border border-gray-300 rounded-md">
+                <!-- Sidebar item with proper group class -->
+                <div class="group relative">
+                    <!-- Main category -->
+                    <div class="flex items-center justify-between px-4 py-3 cursor-pointer border-b border-gray-200 hover:bg-gray-100">
+                        <div class="flex items-center space-x-3">
+                            <img src="/static/images/vehicle.png" alt="Vehicle" class="w-6 h-6">
+                            <div>
+                                <span class="block font-medium text-gray-800">Vehicles</span>
+                                <span class="block text-sm text-gray-500">208,322 ads</span>
+                            </div>
+                        </div>
+                        <div class="text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <span>Property</span>
-                        <span class="text-gray-500">28,352 ads</span>
-                    </div>
-                    <!-- Add other categories similarly -->
-                </div>
-            </div>
 
+                    
+                    <div class="absolute top-0 left-full w-2 h-full group-hover:block hidden"></div>
+
+                    <div class="absolute top-0 left-[calc(100%+0.5rem)] w-64 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block z-10">
+                        <a href="#" class="block">
+                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-gray-100">
+                                <div class="flex items-center space-x-3">
+                                    <img src="/static/images/vehicle.png" alt="Vehicle" class="w-5 h-5">
+                                    <span>Cars</span>
+                                </div>
+                                <span class="text-gray-500">36,095 ads</span>
+                            </div>
+                        </a>
+                        <a href="#" class="block">
+                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-gray-100">
+                                <span>Buses & Microbuses</span>
+                                <span class="text-gray-500">15,234 ads</span>
+                            </div>
+                        </a>
+                        <a href="#" class="block">
+                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-gray-100">
+                                <span>Heavy Equipment</span>
+                                <span class="text-gray-500">22,891 ads</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>  
             <!-- Product Grid -->
             <div class="flex-1">
                 <!-- Banner -->
