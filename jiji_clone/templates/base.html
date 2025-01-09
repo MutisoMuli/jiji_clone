@@ -68,7 +68,7 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
-        <div class="flex">
+        <div class="flex gap-6">
             <!-- Sidebar -->
             <div class="w-64 bg-white border border-gray-300 rounded-md">
                 <!-- Sidebar item with proper group class -->
@@ -78,8 +78,8 @@
                         <div class="flex items-center space-x-3">
                             <img src="/static/images/vehicle.png" alt="Vehicle" class="w-6 h-6">
                             <div>
-                                <span class="block font-medium text-gray-800">Vehicles</span>
-                                <span class="block text-sm text-gray-500">208,322 ads</span>
+                                <span class="block text-gray-400">Vehicles</span>
+                                <span class="block text-sm text-gray-800">208,322 ads</span>
                             </div>
                         </div>
                         <div class="text-gray-500">
@@ -94,78 +94,173 @@
 
                     <div class="absolute top-0 left-[calc(100%+0.5rem)] w-64 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block z-10">
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/vehicle.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Cars</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/vehicle.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Cars</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">36,095 ads</span>
                                 </div>
-                                <span class="text-gray-500">36,095 ads</span>
                             </div>
                         </a>
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/bus.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Buses & Microbuses</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/bus.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Buses & Microbuses</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">1,539 ads</span>
                                 </div>
-                                <span class="text-gray-500">1,539 ads</span>
+                            </div>   
+                        </a>
+                        <a href="#" class="block">
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/heavy.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Heavy Equipment</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">576 ads</span>
+                                </div>
                             </div>
                         </a>
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/heavy.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Heavy Equipment</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/scooter.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Motorbikes & Scooters</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">1,066 ads</span>
                                 </div>
-                                <span class="text-gray-500">576 ads</span>
                             </div>
                         </a>
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/scooter.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Motorbikes & Scooters</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/truck.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Trucks & Trailers</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">1,539 ads</span>
                                 </div>
-                                <span class="text-gray-500">1,066 ads</span>
                             </div>
                         </a>
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/truck.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Trucks & Trailers</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/part.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Vehicle Parts & Accessories</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">166,433 ads</span>
                                 </div>
-                                <span class="text-gray-500">1,539 ads</span>
                             </div>
                         </a>
                         <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/part.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Vehicle Parts & Accessories</span>
+                            <div class="flex items-center px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="/static/images/boat.png" alt="Vehicle" class="w-5 h-5">
+                                        <span>Watercraft & Boats</span>
+                                    </div>
+                                    <span class="text-gray-500 ml-8">41 ads</span>
                                 </div>
-                                <span class="text-gray-500">166,433 ads</span>
-                            </div>
-                        </a>
-                        <a href="#" class="block">
-                            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 hover:bg-blue-100">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/static/images/boat.png" alt="Vehicle" class="w-5 h-5">
-                                    <span>Watercraft & Boats</span>
-                                </div>
-                                <span class="text-gray-500">41 ads</span>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>  
+            
+            
             <!-- Product Grid -->
             <div class="flex-1">
-                <!-- Banner -->
-                <div class="bg-gradient-to-r from-green-400 to-green-300 rounded-lg mb-8 p-6">
-                    <h2 class="text-2xl text-white">How to buy on Jiji?</h2>
-                    <p class="text-white">Check out the step-by-step guide</p>
+                <!-- Bunner -->
+                <div class="flex gap-6 mb-8">
+                <!-- Slider Section -->
+                <div class="flex-1 relative rounded-lg overflow-hidden">
+                    <div class="slider-container relative h-48">
+                        <div class="slide active">
+                            <div class="bg-gradient-to-r from-green-400 to-green-300 w-full h-full">
+                                <img src="{% static 'images/jiji1.png' %}" alt="How to buy 1" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="bg-gradient-to-r from-green-400 to-green-300 w-full h-full">
+                                <img src="{% static 'images/jiji2.png' %}" alt="How to buy 2" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 rounded-full p-2 hover:bg-white/50 transition-colors">
+                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 rounded-full p-2 hover:bg-white/50 transition-colors">
+                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <!-- Navigation Dots -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                        <button onclick="goToSlide(0)" class="w-2 h-2 rounded-full bg-white active"></button>
+                        <button onclick="goToSlide(1)" class="w-2 h-2 rounded-full bg-white/50"></button>
+                    </div>
                 </div>
+
+                <!-- Advert Image Link -->
+                <a href="#" class="block w-48">
+                    <img src="{% static 'images/advert.png' %}" alt="Post an advert" class="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity">
+                </a>
+            </div>
+
+            <style>
+                .slide {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                .slide.active {
+                    opacity: 1;
+                }
+            </style>
+
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.slide');
+                const dots = document.querySelectorAll('.absolute.bottom-4 button');
+
+                function showSlide(index) {
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    dots.forEach(dot => dot.classList.replace('bg-white', 'bg-white/50'));
+        
+                    slides[index].classList.add('active');
+                    dots[index].classList.replace('bg-white/50', 'bg-white');
+                    currentSlide = index;
+                }
+
+                function nextSlide() {
+                    showSlide((currentSlide + 1) % slides.length);
+                }
+
+                function prevSlide() {
+                    showSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+                }
+
+                function goToSlide(index) {
+                    showSlide(index);
+                }
+
+                // Auto-advance slides every 5 seconds
+                setInterval(nextSlide, 5000);
+            </script>
 
                 <h3 class="text-xl mb-4">Trending ads</h3>
                 <div class="grid grid-cols-4 gap-4">
